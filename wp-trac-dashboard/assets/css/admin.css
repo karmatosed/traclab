@@ -1,0 +1,357 @@
+/**
+ * WordPress Trac Dashboard Admin Styles
+ */
+
+.wp-trac-dashboard-controls {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.wp-trac-dashboard-controls .search-box,
+.wp-trac-dashboard-controls .url-input-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.wp-trac-dashboard-controls .search-box input,
+.wp-trac-dashboard-controls .url-input-box input {
+    flex: 1;
+    max-width: 400px;
+}
+
+.wp-trac-dashboard-controls .filter-controls {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.wp-trac-dashboard-controls select {
+    min-width: 150px;
+}
+
+/* Loading Indicator */
+.wp-trac-loading {
+    text-align: center;
+    padding: 40px;
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+.wp-trac-loading .spinner {
+    float: none;
+    margin: 0 10px 0 0;
+}
+
+/* Tickets List */
+.wp-trac-tickets-list {
+    margin: 20px 0;
+}
+
+.wp-trac-ticket {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    transition: box-shadow 0.2s ease;
+}
+
+.wp-trac-ticket:hover {
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.ticket-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.ticket-summary {
+    margin: 0;
+    flex: 1;
+}
+
+.ticket-summary a {
+    text-decoration: none;
+    color: #0073aa;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.ticket-summary a:hover {
+    color: #005a87;
+}
+
+.ticket-status {
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.status-open {
+    background: #d4edda;
+    color: #155724;
+}
+
+.status-closed {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.status-new {
+    background: #d1ecf1;
+    color: #0c5460;
+}
+
+.ticket-meta {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: #666;
+}
+
+.ticket-component {
+    background: #e9ecef;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+.ticket-priority {
+    font-weight: 600;
+}
+
+.ticket-external-link {
+    color: #0073aa;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 2px 6px;
+    border: 1px solid #0073aa;
+    border-radius: 3px;
+    background: #f8f9fa;
+}
+
+.ticket-external-link:hover {
+    background: #0073aa;
+    color: white;
+    text-decoration: none;
+}
+
+.priority-high {
+    color: #dc3545;
+}
+
+.priority-medium {
+    color: #fd7e14;
+}
+
+.priority-low {
+    color: #28a745;
+}
+
+.ticket-description {
+    color: #666;
+    line-height: 1.5;
+    max-height: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+/* No Results */
+.wp-trac-no-results {
+    text-align: center;
+    padding: 40px;
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    color: #666;
+}
+
+/* Modal */
+.wp-trac-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 100000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wp-trac-modal-content {
+    background: #fff;
+    border-radius: 4px;
+    max-width: 800px;
+    width: 90%;
+    max-height: 90%;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.wp-trac-modal-header {
+    padding: 20px;
+    border-bottom: 1px solid #ccd0d4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wp-trac-modal-header h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.wp-trac-modal-close {
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+    line-height: 1;
+}
+
+.wp-trac-modal-close:hover {
+    color: #000;
+}
+
+.wp-trac-modal-body {
+    padding: 20px;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+/* Ticket Details */
+.ticket-details {
+    line-height: 1.6;
+}
+
+.ticket-meta-details {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.ticket-meta-details p {
+    margin: 5px 0;
+}
+
+.ticket-description-full h3,
+.ticket-comments h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.ticket-comments {
+    margin-top: 20px;
+}
+
+.comment {
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #f8f9fa;
+}
+
+.comment-meta {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.comment-content {
+    line-height: 1.5;
+}
+
+/* Dashboard Stats */
+.wp-trac-dashboard-stats {
+    margin-top: 30px;
+}
+
+.stat-card {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.stat-card h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.timeline-item {
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 13px;
+}
+
+.timeline-item:last-child {
+    border-bottom: none;
+}
+
+.timeline-time {
+    color: #666;
+    margin-right: 10px;
+}
+
+.timeline-action {
+    color: #333;
+    margin-right: 5px;
+}
+
+.timeline-link {
+    color: #0073aa;
+    text-decoration: none;
+}
+
+.timeline-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .wp-trac-dashboard-controls .filter-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .wp-trac-dashboard-controls .filter-controls select {
+        min-width: auto;
+    }
+    
+    .ticket-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .ticket-meta {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .wp-trac-modal-content {
+        width: 95%;
+        margin: 20px;
+    }
+} 
